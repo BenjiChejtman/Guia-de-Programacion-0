@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Guia_Ej13 : MonoBehaviour
 {
+    public int horas;
+
     // Start is called before the first frame update
     void Start()
     {

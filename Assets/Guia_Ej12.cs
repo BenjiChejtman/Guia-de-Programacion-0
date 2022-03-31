@@ -43,9 +43,6 @@ public class Guia_Ej12 : MonoBehaviour
         {
             Debug.Log("Insuficiente");
         }
-
-
-
     }
 
     // Update is called once per frame

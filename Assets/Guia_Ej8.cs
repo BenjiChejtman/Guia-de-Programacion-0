@@ -4,44 +4,40 @@ using UnityEngine;
 
 public class Guia_Ej8 : MonoBehaviour
 {
-    public int dia= 0 ;
+    public int dia = 0 ;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (dia == 1) 
-        {
-            Debug.Log("Hoy es Domingo.");
+        switch (dia)
+        {                          //manera de evitar todos estos IF de arriba.
+            case 1:
+                Debug.Log("Domingo");
+                break;
+            case 2:
+                Debug.Log("Lunes");
+                break;
+            case 3:
+                Debug.Log("Martes");
+                break;
+            case 4:
+                Debug.Log("Miercoles");
+                break;
+            case 5:
+                Debug.Log("Jueves");
+                break;
+            case 6:
+                Debug.Log("Viernes");
+                break;
+            case 7:
+                Debug.Log("Sabado");
+                break;
+            default:
+                Debug.Log("El dia ingresado no es valido.");
+                break;
         }
-        else if (dia == 2)
-        {
-            Debug.Log("Hoy es Lunes.");
-        }
-        else if (dia == 3)
-        {
-            Debug.Log("Hoy es Martes.");
-        }
-        else if (dia == 4)
-        {
-            Debug.Log("Hoy es Miercoles.");
-        }
-        else if (dia == 5)
-        {
-            Debug.Log("Hoy es Jueves");
-        }
-        else if (dia == 6)
-        {
-            Debug.Log("Hoy es Viernes");
-        }
-        else if (dia == 7)
-        {
-            Debug.Log(" Hoy es Sabado");
-        }
-        else
-        {
-            Debug.Log("El dia ingresado no es valido.");
-        }
-    }
+
+            }
     
 
     // Update is called once per frame
